@@ -11,7 +11,7 @@ public class SpringbootAzureDemoApplication {
 
 	@GetMapping("/msg")
 	public String getMsg() {
-		return "Hola !! Your App is in Azure ||";
+		return "Holà !! Your App is Live In Azure Platform !!!";
 	}
 	
 	
