@@ -10,11 +10,12 @@ jobs:
     steps:
       - name: Checkout source
         uses: actions/checkout@v4
-      - name: Setup Java
+      - name: Set up Java Version
         uses: actions/setup-java@v4
         with:
           distribution: 'temurin'
           java-version: '11'
+          java-package: jdk
       - name: Build Project
         run: mvn clean install -DskipTests
       - name: Login to docker hub
