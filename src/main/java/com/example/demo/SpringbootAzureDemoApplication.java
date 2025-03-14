@@ -9,14 +9,10 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class SpringbootAzureDemoApplication {
 
-	@GetMapping("/hello")
-	public String getMsg() {
-		return "Holà !! Your Application is Live In Azure Platform !!!";
-	}
-	
-	
-	public static void main(String[] args) {
-		SpringApplication.run(SpringbootAzureDemoApplication.class, args);
-	}
+
+    public static void main(String[] args) {
+        SpringApplication.run(SpringbootAzureDemoApplication.class, args);
+
+    }
 
 }
